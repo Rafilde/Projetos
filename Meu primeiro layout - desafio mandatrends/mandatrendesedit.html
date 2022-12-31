@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.mandatrends.com.br/wp-content/uploads/2020/07/FaviconMnadrin.png" type="image/x-icon">
+    <title>MandaTrends</title>
+    <link rel="shortcut icon" href="https://www.mandatrends.com.br/wp-content/uploads/2020/07/FaviconMnadrin.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ffff;
+        }
+
+        .principal{
+            min-height: 100vh;
+            gap: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /*----------Cabeça----------*/
+        .header{
+            background-image: linear-gradient(to bottom right, #e9492a, #e72357);
+            min-height: 100px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .nrf2020{
+            color: #ffff;
+        }
+
+        /*----------rodapé----------*/
+        .footer{
+            background-color: #e9492a;
+            min-height: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*----------corpo-----------*/
+        .card{
+            display: flex;
+            gap: 10px 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-family: 'Lato', sans-serif;
+
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .cardall{
+            border-bottom: 5px solid transparent;
+            width: 450px;
+            height: 450px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .cardborder1{
+            border-image: linear-gradient(50deg, #ff6666, #4b4bff);
+            border-image-slice: 1;
+        }
+        .cardborder2{
+            border-image: linear-gradient(50deg, #66d6ff, #4a42e1);
+            border-image-slice: 1;
+        }
+        .cardborder3{
+            border-image: linear-gradient(50deg, #2aebbb, #094322);
+            border-image-slice: 1;
+        }
+        .big{
+            width: 911px;
+        }
+        .cardimage{
+            background-color: aqua;
+            height: 350px;
+            
+            background-size: cover;
+            margin-bottom: 15px;
+        }
+        .car1{
+            background-image: url("Layer\ 18.png");
+        }
+        .car2{
+            background-image: url("Layer\ 19.png");
+        }
+        .car3{
+            background-image: url("Layer\ 22.png");
+        }
+        .paragrafo{
+            color: #808080;
+        }
+        .title{
+            margin-bottom: 4px;
+        }
+
+        @media(max-width: 929px){
+        .big{
+            width: 450px;
+        }
+        .paragrafo{
+            font-size: 12px;
+        }
+        .title{
+            font-size: 20px;
+        }
+        }
+        @media(max-width: 644px){
+            .mandatrendslogo{
+                width: 100px;
+            }
+            .nrf2020{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <header class="header"> 
+                <img src="Vector Smart Object.png" alt="manda trends" class="mandatrendslogo">
+                <h2 class="nrf2020">
+                    NRF2020,<br>
+                    Kobe Bryant e<br>
+                    WhatsApp Payment
+                </h2>
+        </header>
+
+        <div class="card">
+            <div class="cardall cardborder1 big">
+                <div class="cardimage car1"></div>
+                    <h3 class="title">NRF 2020: conheça os top 5 assuntos do evento.</h3>
+                    <p class="paragrafo">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e <br> inovações para o setor.</p>
+            </div>
+            <div class="cardall cardborder2">
+                <div class="cardimage car2"></div>
+                <h3 class="title">Petição para colocar Kobe <br> Bryant no logo da NBA.</h3>
+            </div>
+            <div class="cardall cardborder3">
+                <div class="cardimage car3"></div>
+                <h3 class="title">WhatsApp terá função de <br> pagamentos em 2020.</h3>
+            </div>
+        </div>
+
+        <footer class="footer"> 
+            <img src="logo_assinatura.png" alt="logo_assinatura" height="50px" class="logo_assinatura">
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
